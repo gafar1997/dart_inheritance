@@ -36,7 +36,10 @@ void main(){
   //atau menggunakan as
   print((m as monsterUburUbur).swim());
 
+  print('');
 
-
-  //
+  //semua monster move()
+  for(monster m in monsters){
+    print(m.move());
+  }
 }

@@ -5,4 +5,9 @@ class monsterUburUbur extends monster{
   String swim(){
     return 'whoosh,, whoosh, ';
   }
+  //implements dari method move
+  @override
+  String move() {
+    return 'Berenang - renang';
+  }
 }
