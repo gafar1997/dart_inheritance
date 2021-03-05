@@ -6,6 +6,7 @@ class monsterUburUbur extends monster{
     return 'whoosh,, whoosh, ';
   }
   //implements dari method move
+  //override untuk menimpa implements
   @override
   String move() {
     return 'Berenang - renang';

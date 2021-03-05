@@ -2,10 +2,12 @@ import 'hero.dart';
 import 'monster.dart';
 import 'monster_kecoa.dart';
 import 'monster_uburubur.dart';
+import 'monster_ucoa.dart';
 
 void main(){
   //identifier
   hero h = hero();
+  monsterKecoa k = monsterKecoa();
   monster m = monsterUburUbur();
   monsterUburUbur u = monsterUburUbur();
 
@@ -16,6 +18,7 @@ void main(){
   monsters.add(monsterUburUbur());
   monsters.add(monsterKecoa());
   monsters.add(monsterUburUbur());
+  monsters.add(monsterUcoa());
 
   print('');
 
@@ -42,4 +45,24 @@ void main(){
   for(monster m in monsters){
     print(m.move());
   }
+
+  print('');
+
+  //monster kecoa fly()
+  print(k.fly());
+
+  print('');
+
+  //monster Ucoa
+  for(monster m in monsters){
+    if(m is monsterUcoa){
+      print((m).fly());
+    }
+  }
+
+  print('');
+
+
+  //monster kecoa drink
+  print(k.drink());
 }

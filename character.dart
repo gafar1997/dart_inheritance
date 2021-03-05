@@ -1,6 +1,6 @@
 class character{
   //field
-  double _healthPoint;
+  late double _healthPoint;
   //setter getter
   void set healthPoint(double value){
     //validate

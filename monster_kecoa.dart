@@ -1,6 +1,9 @@
+import 'drink_abilitymixin.dart';
+import 'flying_monster.dart';
 import 'monster.dart';
 
-class monsterKecoa extends monster{
+class monsterKecoa extends monster with drinkAbilityMixin implements flyingMonster{
+  @override
   String fly(){
     return 'suing... suing...';
   }
